@@ -1,5 +1,28 @@
-:root {
+body {
+    background-image: url("./assets/scorpius.png");
+    background-size: cover;
+
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    height: 200px;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.textbox {
+    background-color:rgb(245, 245, 245, 0.7);
+    width: 30%;
+    padding: 20px;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 h1 {
@@ -7,6 +30,29 @@ h1 {
     color: #24688f;
 }
 
-img {
+h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#headshot {
     width: 30%;
+}
+
+img {
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    #about {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .textbox {
+        width: 80%;
+    }
 }
